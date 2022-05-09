@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	font-family: Signika;
+	height: 100%;
+	width: 100%;
+}
+section{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section .errors{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section .ilustration{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -16,7 +16,7 @@ class PokemonController extends Controller implements PokemonInterface
      */
 
     private $baseUrl = "https://pokeapi.co/api/v2/pokemon";
-    private $param = "?offset=0&limit=2";
+    private $param = "?offset=0&limit=3";
     public $id;
     public $name;
     public $sprites;
@@ -111,7 +111,7 @@ class PokemonController extends Controller implements PokemonInterface
                 }
                 return view("home", compact('pokemons'));
             else:
-                return view("erros.500");
+                return view("errors.500");
             endif;
         }catch(\Exception $e){
             return $this->errors($e);

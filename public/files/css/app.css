@@ -1,8 +1,14 @@
 /* Grid */
 .grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 100px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	max-width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
 }
 
 .start {
@@ -31,17 +37,47 @@
 
 /* Grid Item */
 .item {
-	margin: 5px;
-	text-align: center;
-	font-size: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+    height: 380px;
+    margin: 5px;
+    background: rgb(240, 239, 239);
+	padding: 10px;
 }
 
-.grid {
-    display: flex;
-    justify-content: center;
-}
-.item #bg_pokemon{
+.item #bg_pokemon img {
     width: 50%;
+}
+.item #statis {
+    width: 98%;
+    height: 28%;
+    text-align: left;
+    font-size: small;
+	background-color: white;
+	padding: 1%;
+}
+.item #statis #number {
+    font-size: 12px;
+}
+.item #statis #name {
+    font-size: 18px;
+    padding: 8px 0px;
+}
+.item #ability {
+    display: flex;
+}
+.item #ability #one {
+    margin-right: 2px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    padding: 0px 30px;
+    border-radius: 5%;
+}
+.item #ability #two {
+    margin-right: 2px;
+    background-color: rgb(155, 204, 80);
+    padding: 0px 30px;
+    border-radius: 5%;
 }
 h1 {
 	text-align: center;
@@ -53,12 +89,10 @@ html{
     height: 100%;
 }
 body {
-	font-family: monospace;
-	color: #333;
-	padding-bottom: 60px;
-	margin: 0px;
+	font-family: Signika;
     width: 100%;
     height: 100%;
+    margin: 0px;
 }
 
 body > div {
